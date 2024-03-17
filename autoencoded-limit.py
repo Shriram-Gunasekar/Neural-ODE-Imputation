@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 from torchdiffeq import odeint
 
+#dtdx​=−y+x(1−x2−y2)
+#dydt=x+y(1−x2−y2)dtdy​=x+y(1−x2−y2)
+
 # Define the autoencoder architecture
 class Autoencoder(nn.Module):
     def __init__(self):
